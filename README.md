@@ -17,9 +17,9 @@ The project collects data by scraping metadata and downloading audio from YouTub
 
 The analysis is carried out in two phases, with the code for this process available in the "analyze_the_data.ipynb" file. The first phase focuses on **thematic exploration**, where **TF-IDF (Term Frequency-Inverse Document Frequency)** scores are calculated to identify the most significant **unigrams, bigrams, and trigrams** across the 600 YouTube transcripts. Following this, **cosine similarity** calculations are performed in stages: first, using unigrams and nouns; then unigrams and bigrams; and finally, unigrams, bigrams, and trigrams, to measure the textual similarity between the videos. The second phase shifts to **register analysis**, where the most frequent **bigrams, trigrams, tetragrams**, and **pentagrams** are examined to identify recurring language patterns. Additionally, **collocations** are detected based on bigrams and trigrams, alongside specific grammatical patterns such as **adjective + noun** pairs. The analysis also explores the types of **subjects** and **processes** featured in the discourse, focusing on the **participants** involved in these actions.
 
-### 3. Data Used in This Iteration of the Project
+## 3. Data Used in This Iteration of the Project
 
-#### Lifestyle Corpus
+### Lifestyle Corpus
 
 The **Lifestyle Corpus** consists of 50 videos from the latest content (as of the time of scraping) from the following YouTube channels that position themselves, or are typically categorized, as **lifestyle resources**:
 
@@ -32,7 +32,7 @@ The **Lifestyle Corpus** consists of 50 videos from the latest content (as of th
 
 These channels are specifically focused on **lifestyle, fashion, and personal development**, and their content was selected to form the **Lifestyle Database** for linguistic analysis.
 
-#### YouTube Corpus
+### YouTube Corpus
 
 The **YouTube Corpus** contains 15 videos from each of the following 20 YouTube channels, representing a broad spectrum of **generalized YouTube content**, as it were. These videos serve as a **comparative reference** for the linguistic analysis of the **Lifestyle Corpus**:
 
@@ -94,7 +94,7 @@ The data analysis process, as implemented in the `analyze_the_data.ipynb` file, 
     - Specific grammatical structures, such as **adjective + noun** pairs, which are indicative of common phrases and terms in the discourse.
   - The analysis also explores the types of **subjects** and **processes** involved in the discourse. A list of **verbs** representing different **process types** is used for this analysis. The verb list is stored in the `sfl_processes.json` file and helps categorize the various actions and interactions present in the videos.
 
-### Acknowledgments
+## 5. Acknowledgments
 
 I would like to express my gratitude to the following tools and libraries that made this project possible:
 
@@ -108,7 +108,7 @@ I would like to express my gratitude to the following tools and libraries that m
 
 These libraries have been instrumental in collecting, processing, and analyzing data for this project.
 
-### License
+## 6. License
 
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to share, remix, and adapt the content in this project for any purpose, even commercially, as long as you provide appropriate credit to the original author.
 
